@@ -1,0 +1,19 @@
+### LOGIN
+POST http://localhost:8000/oauth/token HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "grant_type" : "password",
+    "client_id" : "93c99281-cc84-4803-8648-53d06f86ffe4",
+    "client_secret" : "5MW8oJGonE1tCnqa9ZneqIEuJ6g7NPBjQGXiuj1h",
+    "username" : "ryan84@example.net",
+    "password" : "password",
+    "scope" : ""
+}
+
+### GET USER
+
+GET http://localhost:8000/api/user HTTP/1.1
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5M2M5OTI4MS1jYzg0LTQ4MDMtODY0OC01M2QwNmY4NmZmZTQiLCJqdGkiOiI1NGVlYzM1ZGNjYTExMWI5ODY0YzM5YjYxYjA3YWEwNTM4NWZiMzM2ODMwMzdkZGFhYzY2N2ZhZTg5NWFiZDZjNGEyZDU4NjBlOWE4ZjhiMCIsImlhdCI6MTYyNDk0MzA1MS43ODkzNDUsIm5iZiI6MTYyNDk0MzA1MS43ODkzNjUsImV4cCI6MTY1NjQ3OTA1MS42MTQzNTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.JYHWnTb5fXnVu3o28j6a4FhuXM2a3QobKvc4sXobz5BMGUykYoRhdIk1j8mPrRl5M1A4oa3guO4lMKa1Wob5juGZChn-2Fg1SFtMtQHEmBLPL8E1z0jzG2rt9_xVEfIhBVZq-TnEo4BnGkPzPsttLvqHDQJjlJ5Fcxf41VgbJ1ld-mVyc9V7QYqH-ydkRl045yX9XjFBFIh-XYxOAxQ6A-BwTGftJ_rKouEcycwWsHLZypB0XxItODxLlw7bIR3tWrMSHoa-IKGKQGMbz16C9yIpnMdafFTmRLFhVpbvl5g1pzZ__lfnTV64yv4Xi1wxU28S3xWSUZCcjr3sfJRfwT0TOmuawEyAPm8FeaRFamevgLxmP7Vh54CnkUPyup6SoDhx3BxtMN0xScdjwRwNBbZnjL9WfxFoAmxF-IvWbJUDv1upomebBRaZ4cmdmfDTvUM0ZduQNCI3wOTIeVApIKa6jxnOaqytaK6_3GIJ6vKxQZzw0T_NYQZoWK_SDeit_LvQku-_Ji_1HRrcVzflIXdFU29VZQ6m98S8xocXJD_qFaPQ3VO-cavqxVdkJOETIqOED649X4dEnEGWNIi75NfsbuK0jW1t3R0RRJXTp9oG91Tu14t6iJ5BFESZuvGczQZOjqaH0tODGL7LqCKgeFc51bMtuLj0SZMlF2-TZAM

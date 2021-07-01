@@ -1,0 +1,13 @@
+### LOGIN
+POST http://localhost:8000/oauth/token HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "grant_type" : "password",
+    "client_id" : "93c99281-cc84-4803-8648-53d06f86ffe4",
+    "client_secret" : "5MW8oJGonE1tCnqa9ZneqIEuJ6g7NPBjQGXiuj1h",
+    "username" : "ryan84@example.net",
+    "password" : "password",
+    "scope" : ""
+}
